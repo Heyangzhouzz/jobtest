@@ -1,0 +1,18 @@
+@import './var.scss';
+@import './reset.scss';
+// @import './custom.scss';
+// @import './animate.scss';
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '../../node_modules/element-ui/lib/theme-chalk/fonts';
+@import '../../node_modules/element-ui/packages/theme-chalk/src/index';
+#IRS-head{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+body {
+  padding-top: 110px;
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
+}
