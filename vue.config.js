@@ -13,9 +13,9 @@ module.exports = {
     port: process.env.PORT || 8328,
     proxy: {
       '/api': {
-        target: 'https://mockroll.irs01.com',
+        target: 'https://www.easy-mock.com',
         pathRewrite: {
-          '^/api': '/mock/99'
+          '^/api': '/mock/5bcfe82d93606914c0e82f44'
         },
         changeOrigin: true,
         ws: true
