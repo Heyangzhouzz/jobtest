@@ -10,9 +10,3 @@ $--font-path: '../../node_modules/element-ui/lib/theme-chalk/fonts';
   width: 100%;
   top:0;
 }
-body {
-  padding-top: 110px;
-  @media screen and (max-width: 768px) {
-    padding-top: 50px;
-  }
-}

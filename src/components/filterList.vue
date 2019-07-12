@@ -75,7 +75,7 @@ export default {
     @media screen and (min-width: 769px) {
         &.fixed{
           position: fixed;
-          top:100px;
+          top:0;
           width: 180px;
         }
       }

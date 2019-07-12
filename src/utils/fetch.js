@@ -27,19 +27,19 @@ fetch.interceptors.request.use(
 fetch.interceptors.response.use(
   response => {
     const res = response.data
-    if (res.rsCode !== 200) {
+    if (res.resCode !== 200) {
       // 401: 登录过期  403: 权限不足  500: 系统内部错误
-      switch (res.rsCode) {
+      switch (res.resCode) {
         case 405:
           Message({
-            message: res.rsMsg,
+            message: res.resMsg,
             type: 'warning',
             duration: 5 * 1000
           })
           break
         default:
           Message({
-            message: res.rsMsg,
+            message: res.resMsg,
             type: 'warning',
             duration: 5 * 1000
           })
